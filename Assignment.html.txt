@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Basic Webpage Assignment</title>
+</head>
+<body>
+
+    <h1>My First Webpage</h1>
+
+    <p>This page was created for my HTML assignment.</p>
+
+    <h3>Learning HTML</h3>
+
+    <h6>Small heading example</h6>
+
+</body>
+</html>
