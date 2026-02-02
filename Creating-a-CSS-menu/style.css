@@ -1,0 +1,55 @@
+body{
+  font-family: Arial, sans-serif;
+}
+
+/* CONTAINER */
+.container{
+  width: 450px;
+  height: 450px;
+  background-color: #faebd7;
+  border: 2px solid black;
+  border-radius: 5%;
+  margin-left: 100px;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+/* ALL 4 BOXES */
+.container .box:nth-child(-n+4){
+  background-image: url("smile.png");
+  background-size: cover;
+  background-position: center;
+  float: left;
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+  border: 1px solid black;
+  border-radius: 25%;
+  cursor: pointer;
+  transition: transform .5s ease-in-out;
+}
+
+/* HOVER ANIMATION */
+.container .box:nth-child(-n+4):hover{
+  transform: scale(.5);
+  animation-name: race;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(2.5, .2, .3, 2);
+}
+
+/* DIFFERENT COLORS ON HOVER */
+.container .box:nth-child(1):hover{ background: #13b4ff; }
+.container .box:nth-child(2):hover{ background: #d861af; }
+.container .box:nth-child(3):hover{ background: #81205f; }
+.container .box:nth-child(4):hover{ background: #77b800; }
+
+/* ANIMATION */
+@keyframes race{
+  0%,100%{
+    transform: translateY(0px);
+  }
+  50%{
+    transform: translateY(300px);
+  }
+}

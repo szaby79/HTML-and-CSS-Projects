@@ -1,0 +1,45 @@
+.flex-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.photo-container {
+    margin: 15px;
+}
+
+.photo {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.photo img {
+    width: 300px;
+    height: 200px;
+    transition: transform .5s;
+}
+
+.photo:hover img {
+    transform: scale(1.1);
+}
+
+.photo-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    opacity: 0;
+    transition: opacity .5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo:hover .photo-overlay {
+    opacity: 1;
+}
