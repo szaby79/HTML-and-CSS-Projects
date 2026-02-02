@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap 4 CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">My Bootstrap Site</a>
+</nav>
+
+<!-- CONTAINER -->
+<div class="container mt-5">
+
+    <!-- ROW -->
+    <div class="row">
+        <div class="col-md-6">
+            <h2>About</h2>
+            <p>This is a responsive website built using Bootstrap 4.</p>
+        </div>
+        <div class="col-md-6">
+            <h2>Image</h2>
+            <img src="https://via.placeholder.com/400" class="img-fluid rounded" alt="Example">
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- FORM -->
+    <h2>Contact Form</h2>
+    <form>
+        <div class="form-group">
+            <label>Name</label>
+            <input type="text" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label>Email</label>
+            <input type="email" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label>Message</label>
+            <textarea class="form-control"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
