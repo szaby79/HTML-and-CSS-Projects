@@ -1,78 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Space Exploration</title>
-    <link rel="stylesheet" href="CSS/one_page_website.css">
-</head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Space Exploration - One Page Website</title>
 
+  <!-- IMPORTANT: folder name is "css" (lowercase) -->
+  <link rel="stylesheet" href="css/one_page_website.css" />
+</head>
 <body>
 
-<!-- Navigation -->
-<nav>
-    <a href="#home">Home</a>
-    <a href="#gallery">Gallery</a>
-    <a href="#video">Video</a>
-    <a href="#contact">Contact</a>
-</nav>
+  <header class="header">
+    <div class="container header-inner">
+      <div class="brand">Space Exploration</div>
 
-<hr>
+      <nav class="nav">
+        <a href="#home">Home</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#video">Video</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-<!-- Home Section -->
-<section id="home">
-    <h1>Welcome to Space Exploration</h1>
-    <p>This one-page website is about outer space. It includes images, a video, and a contact form.</p>
-</section>
+  <main class="container">
 
-<hr>
+    <!-- HOME -->
+    <section id="home" class="card section">
+      <h1>Welcome to Space Exploration</h1>
+      <p>
+        This one-page website is about outer space. It includes images, a video,
+        and a contact form. I am practicing HTML and CSS.
+      </p>
 
-<!-- Gallery Section -->
-<section id="gallery">
-    <h2>Space Gallery</h2>
-    <img src="https://via.placeholder.com/150" alt="Space Image">
-    <img src="https://via.placeholder.com/150" alt="Space Image">
-    <img src="https://via.placeholder.com/150" alt="Space Image">
-    <img src="https://via.placeholder.com/150" alt="Space Image">
-</section>
+      <div class="badge-row">
+        <span class="badge">HTML</span>
+        <span class="badge">CSS</span>
+        <span class="badge">One Page</span>
+      </div>
+    </section>
 
-<hr>
+    <!-- GALLERY -->
+    <section id="gallery" class="card section">
+      <h2>Space Gallery</h2>
+      <p class="muted">Images are loaded from: <strong>../Images/Thumb/</strong></p>
 
-<!-- Video Section -->
-<section id="video">
-    <h2>Space Video</h2>
-    <iframe width="560" height="315"
-        src="https://www.youtube.com/embed/21X5lGlDOfg"
-        title="YouTube video"
-        frameborder="0"
-        allowfullscreen>
-    </iframe>
-</section>
+      <div class="grid">
+        <figure class="tile">
+          <img src="../Images/Thumb/thumbnail_1.jpg" alt="Space image 1">
+          <figcaption>Space image 1</figcaption>
+        </figure>
 
-<hr>
+        <figure class="tile">
+          <img src="../Images/Thumb/thumbnail_2.jpg" alt="Space image 2">
+          <figcaption>Space image 2</figcaption>
+        </figure>
 
-<!-- Contact Section -->
-<section id="contact">
-    <h2>Contact Us</h2>
-    <form>
-        <label>Name:</label><br>
-        <input type="text" name="name"><br><br>
+        <figure class="tile">
+          <img src="../Images/Thumb/thumbnail_3.jpg" alt="Space image 3">
+          <figcaption>Space image 3</figcaption>
+        </figure>
 
-        <label>Email:</label><br>
-        <input type="email" name="email"><br><br>
+        <figure class="tile">
+          <img src="../Images/Thumb/thumbnail_4.jpg" alt="Space image 4">
+          <figcaption>Space image 4</figcaption>
+        </figure>
 
-        <label>Message:</label><br>
-        <textarea name="message"></textarea><br><br>
+        <figure class="tile">
+          <img src="../Images/Thumb/thumbnail_5.jpg" alt="Space image 5">
+          <figcaption>Space image 5</figcaption>
+        </figure>
 
-        <input type="submit" value="Send">
-    </form>
-</section>
+        <figure class="tile">
+          <img src="../Images/Thumb/thumbnail_6.jpg" alt="Space image 6">
+          <figcaption>Space image 6</figcaption>
+        </figure>
 
-<hr>
+        <figure class="tile">
+          <img src="../Images/Thumb/thumbnail_7.jpg" alt="Space image 7">
+          <figcaption>Space image 7</figcaption>
+        </figure>
 
-<!-- Footer -->
-<footer>
-    <p>&copy; 2026 Space Exploration</p>
-</footer>
+        <figure class="tile">
+          <img src="../Images/Thumb/thumbnail_8.jpg" alt="Space image 8">
+          <figcaption>Space image 8</figcaption>
+        </figure>
+
+        <figure class="tile">
+          <img src="../Images/Thumb/thumbnail_9.jpg" alt="Space image 9">
+          <figcaption>Space image 9</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- VIDEO -->
+    <section id="video" class="card section">
+      <h2>Space Video</h2>
+      <p class="muted">Embedded YouTube video</p>
+
+      <div class="video-wrap">
+        <iframe
+          src="https://www.youtube.com/embed/2lXSjGID0Dg"
+          title="YouTube video"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="card section">
+      <h2>Contact</h2>
+      <p class="muted">This form is for practice.</p>
+
+      <form class="form" action="#" method="post">
+        <label>
+          Name
+          <input type="text" name="name" placeholder="Your name" required>
+        </label>
+
+        <label>
+          Email
+          <input type="email" name="email" placeholder="you@email.com" required>
+        </label>
+
+        <label>
+          Message
+          <textarea name="message" rows="5" placeholder="Write a message..." required></textarea>
+        </label>
+
+        <button type="submit">Send</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Space Exploration</p>
+    </div>
+  </footer>
 
 </body>
 </html>
