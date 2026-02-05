@@ -3,92 +3,89 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Space Exploration - One Page Website</title>
+  <title>Szabolcs Portfolio</title>
 
-  <!-- IMPORTANT: must match folder name EXACTLY: CSS -->
+  <!-- Link to your CSS file -->
   <link rel="stylesheet" href="CSS/one_page_website.css" />
 </head>
 
 <body>
-  <header class="header">
-    <div class="container header-inner">
-      <h1 class="brand">Space Exploration</h1>
 
-      <nav class="nav">
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <div class="brand">Szabolcs</div>
+      <div class="links">
         <a href="#home">Home</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#video">Video</a>
+        <a href="#work">My Work</a>
+        <a href="#about">About</a>
         <a href="#contact">Contact</a>
-      </nav>
+      </div>
     </div>
-  </header>
+  </nav>
 
-  <main class="container">
+  <!-- PAGE -->
+  <main class="page">
+
+    <!-- HOME -->
     <section id="home" class="card">
-      <h2>Welcome to Space Exploration</h2>
-      <p>
-        This one-page website is about outer space. It includes images, a video, and a contact form.
-        I am practicing HTML and CSS.
-      </p>
+      <h1>Welcome to My Portfolio</h1>
+      <p>Hello! My name is Szabolcs Becze. I am learning HTML and CSS. This site shows my practice work and progress.</p>
     </section>
 
-    <section id="gallery" class="card">
-      <h2>Space Gallery</h2>
-      <p class="note">Images are loaded from: <strong>../Images/Thumb/</strong></p>
+    <!-- WORK -->
+    <section id="work" class="card">
+      <h2>My Work</h2>
 
-      <div class="gallery">
-        <img src="../Images/Thumb/thumbnail_1.jpg" alt="Space image 1" />
-        <img src="../Images/Thumb/thumbnail_2.jpg" alt="Space image 2" />
-        <img src="../Images/Thumb/thumbnail_3.jpg" alt="Space image 3" />
-        <img src="../Images/Thumb/thumbnail_4.jpg" alt="Space image 4" />
-        <img src="../Images/Thumb/thumbnail_5.jpg" alt="Space image 5" />
-        <img src="../Images/Thumb/thumbnail_6.jpg" alt="Space image 6" />
-        <img src="../Images/Thumb/thumbnail_7.jpg" alt="Space image 7" />
-        <img src="../Images/Thumb/thumbnail_8.jpg" alt="Space image 8" />
-        <img src="../Images/Thumb/thumbnail_9.jpg" alt="Space image 9" />
+      <div class="grid">
+        <img src="images/space1.png" alt="Project image 1">
+        <img src="images/space2.png" alt="Project image 2">
+        <img src="images/space3.png" alt="Project image 3">
+        <img src="images/space4.png" alt="Project image 4">
+        <img src="images/space5.png" alt="Project image 5">
+        <img src="images/space6.png" alt="Project image 6">
       </div>
+
+      <p class="hint">Tip: If you have fewer images, delete some &lt;img&gt; lines.</p>
     </section>
 
-    <section id="video" class="card">
-      <h2>Space Video</h2>
-      <div class="video-wrap">
+    <!-- ABOUT -->
+    <section id="about" class="card">
+      <h2>About Me</h2>
+      <p>I enjoy learning web development step by step. I like clean design and simple structure.</p>
+
+      <div class="video">
         <iframe
-          src="https://www.youtube.com/embed/1w8z0U0Xvay"
+          src="https://www.youtube.com/embed/21X51G1D0fg"
           title="YouTube video"
-          allowfullscreen
-        ></iframe>
+          allowfullscreen>
+        </iframe>
       </div>
     </section>
 
+    <!-- CONTACT -->
     <section id="contact" class="card">
-      <h2>Contact</h2>
-      <p class="note">This form is for practice.</p>
+      <h2>Contact Me</h2>
 
       <form class="form">
-        <label>
-          Name
-          <input type="text" name="name" placeholder="Your name" />
-        </label>
+        <label for="name">Name</label>
+        <input id="name" type="text" name="name" placeholder="Your name" required>
 
-        <label>
-          Email
-          <input type="email" name="email" placeholder="Your email" />
-        </label>
+        <label for="email">Email</label>
+        <input id="email" type="email" name="email" placeholder="you@email.com" required>
 
-        <label>
-          Message
-          <textarea name="message" rows="5" placeholder="Your message"></textarea>
-        </label>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Write your message..." required></textarea>
 
         <button type="submit">Send</button>
       </form>
     </section>
+
+    <footer class="footer">
+      <p>© 2026 Szabolcs Becze</p>
+    </footer>
+
   </main>
 
-  <footer class="footer">
-    <div class="container">
-      <p>&copy; 2026 Space Exploration</p>
-    </div>
-  </footer>
 </body>
 </html>
